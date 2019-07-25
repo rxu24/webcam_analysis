@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     # Config Path
     config_path = 'D:/DeepLabCut/my_projects/Project2/config.yaml'
-    project_path = input('Please enter the directory of the project folder:')
+    #project_path = input('Please enter the directory of the project folder:')
     # 'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/'
     """
     # Save a video input from the webcam
@@ -34,3 +34,5 @@ if __name__ == "__main__":
     df = pd.read_csv('Wednesday' + '_outputDeepCut_resnet50_Project2Jul8shuffle1_125000.csv', header=1, index_col='bodyparts')
     print(df)
     #print(type(df['bodyparts'][0])) # Read and print a dataframe using pandas library
+
+    print(df[0,1])
