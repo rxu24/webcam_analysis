@@ -31,5 +31,6 @@ if __name__ == "__main__":
     play_video(day_of_week)
     """
     # Csv file analysis
-    df = pd.read_csv('Wednesday' + '_outputDeepCut_resnet50_Project2Jul8shuffle1_125000.csv', index_col='scorer')
-    print(type(df['scorer'][0])) # Read and print a dataframe using pandas library
+    df = pd.read_csv('Wednesday' + '_outputDeepCut_resnet50_Project2Jul8shuffle1_125000.csv', header=1, index_col='bodyparts')
+    print(df)
+    print(type(df['bodyparts'][0])) # Read and print a dataframe using pandas library
