@@ -1,14 +1,23 @@
 import deeplabcut
+import os
 import cv2
 
 
 # Read and store video input from webcam
-def capture_video(day_of_week):
+def capture_video(date, day_of_week):
+    # Directory to store videos
+    # print(os.path.exists(day_of_week + '/' + str(date)))
+    if (os.path.exists(day_of_week + '/' + str(date))):
+        os.chdir(day_of_week + '/' + str(date))
+    else:
+        os.makedirs(day_of_week + '/' + str(date))
+        os.chdir(day_of_week + '/' + str(date))
+
     cap = cv2.VideoCapture(0)
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
 
     # Change the name of the output later to be a concatenation of date or day of week and 'output'
-    out = cv2.VideoWriter(day_of_week + '_output.avi', fourcc, 20.0, (640, 480))
+    out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640, 480))
 
     while (cap.isOpened()):
         ret, frame = cap.read()
@@ -32,9 +41,10 @@ def capture_video(day_of_week):
     cv2.destroyAllWindows()
 
 
-def play_video(day_of_week):  # does not work currently
+def play_video(date, day_of_week):  # does not work currently
     cap = cv2.VideoCapture(
-        'C:/Users/ruidi/PycharmProjects/dlc_webcam_analysis_program/' + day_of_week + 'outputDeepCut_resnet50_Project2Jul8shuffle125000_labeled.mp4')
+        'C:Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program' + day_of_week + '/' + str(
+            date) + 'outputDeepCut_resnet50_Project2Jul8shuffle125000_labeled.mp4')
 
     if (cap.isOpened() == False):
         print('Error opening video file!')
