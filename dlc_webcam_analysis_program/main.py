@@ -9,31 +9,33 @@ import matplotlib.pyplot as plt
 # Main function with code to run
 if __name__ == "__main__":
     print('Beginning program...')
+    print(os.getcwd())
 
     # Find the current day of the week
     my_date = date.today()
     day_of_week = my_date.strftime('%A')
 
+    # Save a video input from the webcam
+    capture_video(my_date, day_of_week)
+
     # Config Path
     config_path = 'D:/DeepLabCut/my_projects/Project2/config.yaml'
-    project_path = input('Please enter the directory of the project folder:')
-    # 'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/'
-
-    # Save a video input from the webcam
-    capture_video(day_of_week)
+    video_path = ('C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + day_of_week + '/' + str(my_date) + '/')
+    # input('Please enter the directory of the video folder:')
+    # 'C:Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + day_of_week + '/' + str(date)
 
     # Tensorflow cannot be running in other command prompt windows when running the following deeplabcut functions
     # Data used for DLC analysis comes from existing project data
-    deeplabcut.analyze_videos(config_path, [project_path + day_of_week + '_output.avi'], save_as_csv=True)
-    deeplabcut.create_labeled_video(config_path, [project_path + day_of_week + '_output.avi'], draw_skeleton=True,
+    deeplabcut.analyze_videos(config_path, [video_path + 'output.avi'], save_as_csv=True)
+    deeplabcut.create_labeled_video(config_path, [video_path + 'output.avi'], draw_skeleton=True,
                                     trailpoints=5)
 
     # Use OpenCV to play the labeled video created by deeplabcut
-    #play_video(day_of_week)
+    #play_video(date, day_of_week)
 
     # Csv file analysis
     # Store the csv data into the dataframe starting from the third frame (header = 2)
-    df = pd.read_csv(day_of_week + '_outputDeepCut_resnet50_Project2Jul8shuffle1_125000.csv', header=2, index_col='coords')
+    df = pd.read_csv('outputDeepCut_resnet50_Project2Jul8shuffle1_125000.csv', header=2, index_col='coords')
     print(df)
     #print(type(df['bodyparts'][0])) # Read and print a dataframe using pandas library
 
