@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 # Main function with code to run
 if __name__ == "__main__":
     print('Beginning program...')
-    # print(os.getcwd())
+    print(os.getcwd())
 
     # Find the current day of the week
     my_date = date.today()
@@ -71,3 +71,6 @@ if __name__ == "__main__":
 
     #Display plot
     plt.show()
+
+    #Other plotting methods
+    
