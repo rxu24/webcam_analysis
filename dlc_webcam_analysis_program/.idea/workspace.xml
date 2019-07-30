@@ -13,8 +13,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            <state relative-caret-position="164">
+              <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -58,11 +58,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="12" />
-    <option name="y" value="-24" />
-    <option name="width" value="1944" />
-    <option name="height" value="1104" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-17" />
+    <option name="y" value="40" />
+    <option name="width" value="1941" />
+    <option name="height" value="1101" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -171,11 +171,12 @@
       <workItem from="1563997666919" duration="2087000" />
       <workItem from="1564061330571" duration="7185000" />
       <workItem from="1564084338640" duration="102000" />
+      <workItem from="1564505097520" duration="95000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44980000" />
+    <option name="totallyTimeSpent" value="45075000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -187,10 +188,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <frame x="-11" y="27" width="1294" height="734" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4025869" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40938511" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -263,8 +264,8 @@
     <entry file="file://$PROJECT_DIR$/videos/video_functions.py" />
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="23" column="33" lean-forward="true" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="164">
+          <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
