@@ -1,6 +1,5 @@
 import deeplabcut
 import os
-import numpy as np
 from datetime import date
 from video_functions import capture_video, play_video
 from plot_scatter import plot_scatter

@@ -1,5 +1,5 @@
-import deeplabcut
 import os
+import numpy as np
 import cv2
 
 
@@ -18,16 +18,23 @@ def capture_video(date, day_of_week):
 
     # Change the name of the output later to be a concatenation of date or day of week and 'output'
     out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640, 480))
+    # fgbg = cv2.createBackgroundSubtractorMOG2()
 
     while (cap.isOpened()):
         ret, frame = cap.read()
+
         if ret == True:
 
+            # fgmask = fgbg.apply(frame)
+
+            #flip frame
             cv2.flip(frame, 1)
+
             # write the flipped frame
             out.write(frame)
 
             cv2.imshow('frame', frame)
+            #cv2.imshow('frame', fgmask)
 
             # specify a key that will turn off camera; currently using spacebar
             if cv2.waitKey(1) & 0xFF == ord(' '):
