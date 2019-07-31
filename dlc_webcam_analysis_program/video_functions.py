@@ -27,14 +27,14 @@ def capture_video(date, day_of_week):
 
             # fgmask = fgbg.apply(frame)
 
-            #flip frame
+            # flip frame
             cv2.flip(frame, 1)
 
             # write the flipped frame
             out.write(frame)
 
             cv2.imshow('frame', frame)
-            #cv2.imshow('frame', fgmask)
+            # cv2.imshow('frame', fgmask)
 
             # specify a key that will turn off camera; currently using spacebar
             if cv2.waitKey(1) & 0xFF == ord(' '):
@@ -48,20 +48,28 @@ def capture_video(date, day_of_week):
     cv2.destroyAllWindows()
 
 
-def play_video(date, day_of_week):  # does not work currently
-    cap = cv2.VideoCapture(
-        'C:Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program' + day_of_week + '/' + str(
-            date) + 'outputDeepCut_resnet50_Project2Jul8shuffle125000_labeled.mp4')
+def play_video(date, day_of_week, video_path):  # does not work currently
 
-    if (cap.isOpened() == False):
+    video_file = cv2.VideoCapture(video_path + 'outputDeepCut_resnet50_Project2Jul8shuffle1_125000_labeled.mp4')
+
+    if (os.path.exists(video_path + 'outputDeepCut_resnet50_Project2Jul8shuffle1_125000_labeled.mp4')):
+        print('Video found')
+    else:
+        print('No video found at specified directory location!')
+
+    if (video_file.isOpened() == False):
         print('Error opening video file!')
 
-    while (cap.isOpened()):
-        ret, frame = cap.read()
+    while (video_file.isOpened()):
+        ret, frame = video_file.read()
 
-        cv2.imshow('frame', frame)
-        if cv2.waitKey(25) & 0xFF == ord(' '):
+        if ret == True:
+            cv2.imshow(day_of_week + '/' + str(date) + '/output', frame)
+
+            if cv2.waitKey(25) & 0xFF == ord(' '):
+                break
+        else:
             break
 
-    cap.release()
+    video_file.release()
     cv2.destroyAllWindows()
