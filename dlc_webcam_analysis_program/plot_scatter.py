@@ -41,4 +41,6 @@ def plot_scatter():
     plt.ylabel('Y position')
 
     # Display plot
+    print('Press CTRL+C to stop showing plot.')
     plt.show()
+

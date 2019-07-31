@@ -48,7 +48,7 @@ def capture_video(date, day_of_week):
     cv2.destroyAllWindows()
 
 
-def play_video(date, day_of_week, video_path):  # does not work currently
+def play_video(date, day_of_week, video_path):
 
     video_file = cv2.VideoCapture(video_path + 'outputDeepCut_resnet50_Project2Jul8shuffle1_125000_labeled.mp4')
 

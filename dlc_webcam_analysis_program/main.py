@@ -2,6 +2,7 @@ import deeplabcut
 import os
 from datetime import date
 from video_functions import capture_video, play_video
+from comparison_plot import comparison_plot
 from plot_scatter import plot_scatter
 
 # Main function with code to run
@@ -34,6 +35,7 @@ if __name__ == "__main__":
 
     # Plot a scatter plot from the csv data of the video taken
     # At this point, current working directory is inside the file where the video and csv file are due to the change of directory in the capture_video function
-    #plot_scatter()
+    plot_scatter()
 
     # Other plotting methods
+    comparison_plot(my_date, day_of_week, video_path)
