@@ -34,7 +34,7 @@ def comparison_plot(day, week_day, video_path):
     # Create a directory to store the png images that will be extracted from the video_file
     if os.path.exists(
             'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
-                    day) + '/output_video_frames'):
+                day) + '/output_video_frames'):
         os.chdir(
             'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
                 day) + '/output_video_frames')
@@ -54,7 +54,7 @@ def comparison_plot(day, week_day, video_path):
     ret, image = video_file.read()
 
     counter = 0
-    while (ret==True):
+    while (ret == True):
         cv2.imwrite("frame%d.PNG" % counter, image)  # save frame as PNG file
         ret, image = video_file.read()
         print('Read a new frame: ', ret)
@@ -84,3 +84,24 @@ def comparison_plot(day, week_day, video_path):
 
     video_file.release()
     cv2.destroyAllWindows()
+
+    counter = 0
+    while (os.path.exists('frame%d.PNG' % counter)):
+        try:
+            os.remove('frame%d.PNG' % counter)
+        except:
+            break
+
+        counter += 1
+
+    while (
+            os.getcwd() != 'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
+        day)):
+        os.chdir('..')
+
+    if os.path.exists(
+            'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
+                day) + '/output_video_frames'):
+        os.removedirs('output_video_frames')
+
+    # End of code
