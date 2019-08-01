@@ -2,10 +2,20 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os
 
-def plot_scatter():
+
+def plot_scatter(day, week_day):
     # Csv file analysis
     # Store the csv data into the dataframe starting from the third frame (header = 2)
-    print(os.getcwd())
+
+    if (
+            os.getcwd() != 'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
+            day)):
+        os.chdir(
+            'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
+                day))
+
+    print('Current working directory: ' + os.getcwd())
+
     df = pd.read_csv('outputDeepCut_resnet50_Project2Jul8shuffle1_125000.csv', header=2, index_col='coords')
     print(df)
     # print(type(df['bodyparts'][0])) # Read and print a dataframe using pandas library
@@ -43,4 +53,3 @@ def plot_scatter():
     # Display plot
     print('Press CTRL+C to stop showing plot.')
     plt.show()
-

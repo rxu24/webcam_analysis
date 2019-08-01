@@ -6,6 +6,7 @@ from comparison_plot import comparison_plot
 from plot_scatter import plot_scatter
 
 # Main function with code to run
+# Use my_date and day_of_week variables within main
 if __name__ == "__main__":
     print('Beginning program...')
     print(os.getcwd())
@@ -35,7 +36,7 @@ if __name__ == "__main__":
 
     # Plot a scatter plot from the csv data of the video taken
     # At this point, current working directory is inside the file where the video and csv file are due to the change of directory in the capture_video function
-    plot_scatter()
+    plot_scatter(my_date, day_of_week)
 
     # Other plotting methods
     comparison_plot(my_date, day_of_week, video_path)

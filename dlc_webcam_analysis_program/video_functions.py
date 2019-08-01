@@ -3,15 +3,16 @@ import numpy as np
 import cv2
 
 
+# Use 'day' and 'week_day' variables for functions
 # Read and store video input from webcam
-def capture_video(date, day_of_week):
+def capture_video(day, week_day):
     # Directory to store videos
     # print(os.path.exists(day_of_week + '/' + str(date)))
-    if (os.path.exists(day_of_week + '/' + str(date))):
-        os.chdir(day_of_week + '/' + str(date))
+    if (os.path.exists(week_day + '/' + str(day))):
+        os.chdir(week_day + '/' + str(day))
     else:
-        os.makedirs(day_of_week + '/' + str(date))
-        os.chdir(day_of_week + '/' + str(date))
+        os.makedirs(week_day + '/' + str(day))
+        os.chdir(week_day + '/' + str(day))
 
     cap = cv2.VideoCapture(0)
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
@@ -48,7 +49,7 @@ def capture_video(date, day_of_week):
     cv2.destroyAllWindows()
 
 
-def play_video(date, day_of_week, video_path):
+def play_video(day, week_day, video_path):
 
     video_file = cv2.VideoCapture(video_path + 'outputDeepCut_resnet50_Project2Jul8shuffle1_125000_labeled.mp4')
 
@@ -64,7 +65,7 @@ def play_video(date, day_of_week, video_path):
         ret, frame = video_file.read()
 
         if ret == True:
-            cv2.imshow(day_of_week + '/' + str(date) + '/output', frame)
+            cv2.imshow(week_day + '/' + str(day) + '/output', frame)
 
             if cv2.waitKey(25) & 0xFF == ord(' '):
                 break
