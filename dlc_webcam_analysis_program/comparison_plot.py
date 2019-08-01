@@ -37,14 +37,18 @@ def comparison_plot(day, week_day, video_path):
     count = 0
     plt.figure(1)
 
-    while (ret):
-        plt.subplot(211)
-        plt.imshow('Labeled video frame by frame', image)
+    while (count < total_frames):
+        #plt.subplot(211)
+        #cv2.imshow('Labeled video frame by frame', image)
 
-        plt.subplot(212)
-        ax = plt.plot(elbow.iloc[count,0], y=elbow.iloc[count,1], color='cyan', label='elbow')
-        plt.plot(wrist.iloc[count,0], wrist.iloc[count,1], color='yellow', ax=ax, label='wrist')
-        plt.plot(hand.iloc[count,0], hand.iloc[count,1], ax=ax, label='hand')
+        print('Frame #: ' + str(count))
+        print('Elbow location: (' + str(elbow.iloc[count,0])+ ', ' + str(elbow.iloc[count,1]) + ')')
+        print('Wrist location: (' + str(wrist.iloc[count, 0]) + ', ' + str(wrist.iloc[count, 1]) + ')')
+        print('Hand location: (' + str(hand.iloc[count, 0]) + ', ' + str(hand.iloc[count, 1]) + ')')
+        #plt.subplot(212)
+        #plt.plot(elbow.iloc[count,0], elbow.iloc[count,1], color='cyan',  label='elbow')
+        #plt.plot(wrist.iloc[count,0], wrist.iloc[count,1], color='yellow', label='wrist')
+        #plt.plot(hand.iloc[count,0], hand.iloc[count,1], color = 'red', label='hand')
 
         count = count + 1
 
