@@ -1,7 +1,7 @@
 import deeplabcut
 import os
 from datetime import date
-from video_functions import capture_video, play_video
+from video_functions import capture_video, play_video, mask_video
 from comparison_plot import comparison_plot
 from plot_scatter import plot_scatter
 
@@ -19,7 +19,7 @@ if __name__ == "__main__":
     #capture_video(my_date, day_of_week)
 
     # Config Path
-    config_path = 'D:/DeepLabCut/my_projects/Project2/config.yaml'
+    config_path = 'D:/DeepLabCut/my_projects/dlc_webcam_analysis/config.yaml'
     video_path = (
             'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + day_of_week + '/' + str(
         my_date) + '/')
@@ -32,11 +32,12 @@ if __name__ == "__main__":
     #deeplabcut.create_labeled_video(config_path, [video_path + 'output.avi'], draw_skeleton=True, trailpoints=5)
 
     # Use OpenCV to play the labeled video created by deeplabcut
-    #play_video(my_date, day_of_week, video_path)
+    mask_video(my_date, day_of_week, video_path)
+    play_video(my_date, day_of_week, video_path)
 
     # Plot a scatter plot from the csv data of the video taken
     # At this point, current working directory is inside the file where the video and csv file are due to the change of directory in the capture_video function
-    #plot_scatter(my_date, day_of_week)
+    plot_scatter(my_date, day_of_week)
 
     # Other plotting methods
     comparison_plot(my_date, day_of_week, video_path)

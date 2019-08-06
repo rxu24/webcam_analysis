@@ -16,7 +16,7 @@ def plot_scatter(day, week_day):
 
     print('Current working directory: ' + os.getcwd())
 
-    df = pd.read_csv('outputDeepCut_resnet50_Project2Jul8shuffle1_125000.csv', header=2, index_col='coords')
+    df = pd.read_csv(str(day) + '_outputDeepCut_resnet50_Project2Jul8shuffle1_125000.csv', header=2, index_col='coords')
     print(df)
     # print(type(df['bodyparts'][0])) # Read and print a dataframe using pandas library
 

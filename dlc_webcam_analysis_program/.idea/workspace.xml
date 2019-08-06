@@ -13,22 +13,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+            <state relative-caret-position="-52">
+              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/comparison_plot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -37,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plot_scatter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="165">
+              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -47,24 +35,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/video_functions.py">
+        <entry file="file://$PROJECT_DIR$/comparison_plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-187">
+            <state relative-caret-position="-73">
               <caret line="49" selection-start-line="49" selection-end-line="49" />
               <folding>
-                <element signature="e#0#9#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/DeepLabCut/deeplabcut/utils/plotting.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/video_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="120" column="25" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="25" />
+            <state relative-caret-position="170">
+              <caret line="91" column="24" lean-forward="true" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
               <folding>
-                <element signature="e#379#393#0" expanded="true" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,16 +88,17 @@
         <option value="D:/DeepLabCut/deeplabcut/utils/plotting.py" />
         <option value="$USER_HOME$/Anaconda3/Scripts/pianoplayer.py" />
         <option value="$USER_HOME$/Anaconda3/envs/piano_fingering/pianoplayer.py" />
-        <option value="$PROJECT_DIR$/video_functions.py" />
-        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$USER_HOME$/Anaconda3/envs/dlc-windowsGPU/Lib/site-packages/deeplabcut/generate_training_dataset/frame_extraction.py" />
         <option value="$PROJECT_DIR$/plot_scatter.py" />
         <option value="$PROJECT_DIR$/comparison_plot.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/video_functions.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="324" />
-    <option name="y" value="-24" />
+    <option name="x" value="556" />
+    <option name="y" value="-14" />
     <option name="width" value="981" />
     <option name="height" value="1092" />
   </component>
@@ -119,7 +108,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,22 +115,57 @@
               <item name="dlc_webcam_analysis_program" type="b2602c69:ProjectViewProjectNode" />
               <item name="dlc_webcam_analysis_program" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="dlc_webcam_analysis_program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dlc_webcam_analysis_program" type="462c0819:PsiDirectoryNode" />
+              <item name="Monday" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dlc_webcam_analysis_program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dlc_webcam_analysis_program" type="462c0819:PsiDirectoryNode" />
+              <item name="Monday" type="462c0819:PsiDirectoryNode" />
+              <item name="2019-08-05" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dlc_webcam_analysis_program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dlc_webcam_analysis_program" type="462c0819:PsiDirectoryNode" />
+              <item name="Thursday" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dlc_webcam_analysis_program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dlc_webcam_analysis_program" type="462c0819:PsiDirectoryNode" />
+              <item name="Thursday" type="462c0819:PsiDirectoryNode" />
+              <item name="2019-08-01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dlc_webcam_analysis_program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dlc_webcam_analysis_program" type="462c0819:PsiDirectoryNode" />
+              <item name="Tuesday" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dlc_webcam_analysis_program" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dlc_webcam_analysis_program" type="462c0819:PsiDirectoryNode" />
+              <item name="Tuesday" type="462c0819:PsiDirectoryNode" />
+              <item name="2019-08-06" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Anaconda3/envs/dlc-windowsGPU/DLLs" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Anaconda3/envs/dlc_webcam_analysis/DLLs" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ruidi\Anaconda3\envs\dlc_webcam_analysis\DLLs" />
       <recent name="C:\Users\ruidi\Anaconda3\envs\dlc-windowsGPU\DLLs" />
       <recent name="C:\Users\ruidi\Anaconda3\envs\piano_fingering" />
     </key>
@@ -232,12 +255,14 @@
       <workItem from="1564505447315" duration="8724000" />
       <workItem from="1564556100982" duration="19000" />
       <workItem from="1564582928198" duration="10499000" />
-      <workItem from="1564668297015" duration="16224000" />
+      <workItem from="1564668297015" duration="16358000" />
+      <workItem from="1565014354647" duration="5004000" />
+      <workItem from="1565109453939" duration="7577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96861000" />
+    <option name="totallyTimeSpent" value="109576000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -252,12 +277,12 @@
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.024252223" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15440582" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47847682" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3576159" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.24834438" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -279,7 +304,7 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/dlc_webcam_analysis_program$main.coverage" NAME="main Coverage Results" MODIFIED="1564697947650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dlc_webcam_analysis_program$main.coverage" NAME="main Coverage Results" MODIFIED="1565125111978" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dlc_webcam_analysis_program$plotting.coverage" NAME="plotting Coverage Results" MODIFIED="1563999934228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/DeepLabCut/deeplabcut/utils" />
   </component>
   <component name="editorHistoryManager">
@@ -325,9 +350,19 @@
     </entry>
     <entry file="file://$USER_HOME$/Anaconda3/Scripts/pianoplayer" />
     <entry file="file://$USER_HOME$/Anaconda3/envs/piano_fingering/pianoplayer.py" />
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/numpy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/dlc-windowsGPU/Lib/site-packages/deeplabcut/generate_training_dataset/frame_extraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="141" column="20" selection-start-line="141" selection-start-column="20" selection-end-line="141" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://D:/DeepLabCut/deeplabcut/utils/plotting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="2040">
           <caret line="120" column="25" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="25" />
           <folding>
             <element signature="e#379#393#0" expanded="true" />
@@ -335,10 +370,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/comparison_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-73">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_scatter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="40" column="28" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        <state relative-caret-position="-52">
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
@@ -347,30 +402,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/video_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-187">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="170">
+          <caret line="91" column="24" lean-forward="true" selection-start-line="91" selection-start-column="24" selection-end-line="91" selection-end-column="24" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot_scatter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/comparison_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
