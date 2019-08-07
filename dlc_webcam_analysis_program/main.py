@@ -28,11 +28,11 @@ if __name__ == "__main__":
 
     # Tensorflow cannot be running in other command prompt windows when running the following deeplabcut functions
     # Data used for DLC analysis comes from existing project data
-    #deeplabcut.analyze_videos(config_path, [video_path + 'output.avi'], save_as_csv=True)
-    #deeplabcut.create_labeled_video(config_path, [video_path + 'output.avi'], draw_skeleton=True, trailpoints=5)
+    #deeplabcut.analyze_videos(config_path, [video_path + str(my_date) + '_output.avi'], save_as_csv=True)
+    #deeplabcut.create_labeled_video(config_path, [video_path + str(my_date) + '_output.avi'], draw_skeleton=True, trailpoints=5)
 
     # Use OpenCV to play the labeled video created by deeplabcut
-    mask_video(my_date, day_of_week, video_path)
+    #mask_video(my_date, day_of_week, video_path)
     play_video(my_date, day_of_week, video_path)
 
     # Plot a scatter plot from the csv data of the video taken
@@ -41,3 +41,5 @@ if __name__ == "__main__":
 
     # Other plotting methods
     comparison_plot(my_date, day_of_week, video_path)
+
+    ### BEGIN TESTING OF BACKGROUND SUBTRACTION! ###

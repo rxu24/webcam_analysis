@@ -16,18 +16,17 @@ def comparison_plot(day, week_day, video_path):
 
     ### Read csv data into dataframe ###
     # Streamline later by calling plot_scatter() function, stop the "hard coding"
-    df = pd.read_csv(str(day) + 'outputDeepCut_resnet50_Project2Jul8shuffle1_125000.csv', header=2, index_col='coords')
-    shoulder = df.iloc[:, [0, 1]]
-    elbow = df.iloc[:, [3, 4]]
-    wrist = df.iloc[:, [6, 7]]
-    hand = df.iloc[:, [9, 10]]
+    df = pd.read_csv(str(day) + '_outputDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_435000.csv', header=2, index_col='coords')
+    elbow = df.iloc[:, [0, 1]]
+    wrist = df.iloc[:, [3, 4]]
+    hand = df.iloc[:, [6, 7]]
 
     print('CSV data successfully saved into panda Dataframes!')
 
     ### Save video as individual frames (PNG format) ###
     # Check to see if video_file exists
     try:
-        video_file = cv2.VideoCapture(video_path + str(day) + '_outputDeepCut_resnet50_Project2Jul8shuffle1_125000_labeled.mp4')
+        video_file = cv2.VideoCapture(video_path + str(day) + '_outputDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_435000.mp4')
     except:
         print('Video file not found!')
 

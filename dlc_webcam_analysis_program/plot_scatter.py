@@ -16,27 +16,25 @@ def plot_scatter(day, week_day):
 
     print('Current working directory: ' + os.getcwd())
 
-    df = pd.read_csv(str(day) + '_outputDeepCut_resnet50_Project2Jul8shuffle1_125000.csv', header=2, index_col='coords')
+    df = pd.read_csv(str(day) + '_outputDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_435000.csv', header=2, index_col='coords')
     print(df)
     # print(type(df['bodyparts'][0])) # Read and print a dataframe using pandas library
 
-    shoulder = df.iloc[:, [0, 1]]
-    print(shoulder)
-
-    elbow = df.iloc[:, [3, 4]]
+    elbow = df.iloc[:, [0, 1]]
     print(elbow)
 
-    wrist = df.iloc[:, [6, 7]]
+    wrist = df.iloc[:, [3, 4]]
     print(wrist)
 
-    hand = df.iloc[:, [9, 10]]
+    hand = df.iloc[:, [6, 7]]
     print(hand)
+
 
     # Plot dataframes
     # shoulder.plot(kind='scatter', x='x', y='y', color='darkblue')
-    ax = elbow.plot(kind='scatter', x='x.1', y='y.1', color='cyan', label='elbow')
-    wrist.plot(kind='scatter', x='x.2', y='y.2', color='yellow', ax=ax, label='wrist')
-    hand.plot(kind='scatter', x='x.3', y='y.3', color='red', ax=ax, label='hand')
+    ax = elbow.plot(kind='scatter', x='x', y='y', color='cyan', label='elbow')
+    wrist.plot(kind='scatter', x='x.1', y='y.1', color='yellow', ax=ax, label='wrist')
+    hand.plot(kind='scatter', x='x.2', y='y.2', color='red', ax=ax, label='hand')
 
     # Set domain and range for plot
     plt.ylim([0, 480])

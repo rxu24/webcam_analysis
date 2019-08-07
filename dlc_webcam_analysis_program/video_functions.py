@@ -49,11 +49,12 @@ def capture_video(day, week_day):
 def mask_video(day, week_day, video_path):
     print('Running mask_video() function...')
 
-    if (os.path.exists(week_day + '/' + str(day))):
-        os.chdir(week_day + '/' + str(day))
-    else:
-        os.makedirs(week_day + '/' + str(day))
-        os.chdir(week_day + '/' + str(day))
+    if (
+            os.getcwd() != 'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
+            day)):
+        os.chdir(
+            'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
+                day))
 
     video_file = cv2.VideoCapture(video_path + str(day) + '_output.avi')
 
@@ -97,11 +98,11 @@ def mask_video(day, week_day, video_path):
 
 def play_video(day, week_day, video_path):
     print('Running play_video() function now...')
-
+    print('Video path inputted into function is: ' + video_path)
     video_file = cv2.VideoCapture(
-        video_path + str(day) + '_outputDeepCut_resnet50_Project2Jul8shuffle1_125000_labeled.mp4') # requires deeplabcut analysis prior
+        video_path + str(day) + '_outputDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_435000_labeled.mp4') # requires deeplabcut analysis prior
 
-    if (os.path.exists(video_path + str(day) + '_outputDeepCut_resnet50_Project2Jul8shuffle1_125000_labeled.mp4')):
+    if (os.path.exists(video_path + str(day) + '_outputDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_435000.mp4')):
         print('Video found')
     else:
         print('No video found at specified directory location!')
