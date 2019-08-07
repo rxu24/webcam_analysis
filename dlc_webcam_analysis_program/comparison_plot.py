@@ -1,6 +1,7 @@
 import cv2
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 import os
 
 
@@ -26,22 +27,22 @@ def comparison_plot(day, week_day, video_path):
     ### Save video as individual frames (PNG format) ###
     # Check to see if video_file exists
     try:
-        video_file = cv2.VideoCapture(video_path + str(day) + '_outputDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_435000.mp4')
+        video_file = cv2.VideoCapture(video_path + str(day) + '_outputDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_435000_labeled.mp4')
     except:
         print('Video file not found!')
 
     # Create a directory to store the png images that will be extracted from the video_file
     if os.path.exists(
             'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
-                day) + '/output_video_frames'):
+                day) + '/' + str(day) + '_output_video_frames'):
         os.chdir(
             'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
-                day) + '/output_video_frames')
+                day) + '/' + str(day) + '_output_video_frames')
     else:
-        os.mkdir('output_video_frames')
+        os.mkdir(str(day) + '_output_video_frames')
         os.chdir(
             'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
-                day) + '/output_video_frames')
+                day) + '/' + str(day)+ '_output_video_frames')
 
     # Calculate frame rate and total number of frames of video
     frame_rate = video_file.get(cv2.CAP_PROP_FPS)
@@ -66,8 +67,9 @@ def comparison_plot(day, week_day, video_path):
     # Iterate through all the frames of the video, plot both the picture and the data points using subplot
     count = 0
     while (count < total_frames):
-        # plt.subplot(211)
-        # cv2.imshow('Labeled video frame by frame', image)
+        #plt.subplot(211)
+        #img = mpimg.imread('frame%d.PNG' % count)
+        #plt.imshow(img)
 
         print('Frame #: ' + str(count))
         print('Elbow location: (' + str(elbow.iloc[count, 0]) + ', ' + str(elbow.iloc[count, 1]) + ')')
@@ -90,17 +92,18 @@ def comparison_plot(day, week_day, video_path):
             os.remove('frame%d.PNG' % counter)
         except:
             break
-
         counter += 1
 
+
+    ### PROGRAM BREAKS RIGHT HERE!!! ###
     while (
-            os.getcwd() != 'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
-        day)):
+            os.getcwd() != 'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + str(week_day) + '/' + str(
+        day)+ '/'):
         os.chdir('..')
 
-    if os.path.exists(
-            'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
-                day) + '/output_video_frames'):
-        os.removedirs('output_video_frames')
-
+    if (os.path.exists(str(day) + '_output_video_frames')):
+        print('Now deleting plotted frames...')
+        os.removedirs(str(day) + '_output_video_frames')
+    else:
+        print('Fail!')
     # End of code

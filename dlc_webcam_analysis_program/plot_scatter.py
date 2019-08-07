@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import os
 
 
-def plot_scatter(day, week_day):
+def plot_scatter(day, week_day, csv_path):
     # Csv file analysis
     # Store the csv data into the dataframe starting from the third frame (header = 2)
 
@@ -16,7 +16,7 @@ def plot_scatter(day, week_day):
 
     print('Current working directory: ' + os.getcwd())
 
-    df = pd.read_csv(str(day) + '_outputDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_435000.csv', header=2, index_col='coords')
+    df = pd.read_csv(csv_path, header=2, index_col='coords')
     print(df)
     # print(type(df['bodyparts'][0])) # Read and print a dataframe using pandas library
 
