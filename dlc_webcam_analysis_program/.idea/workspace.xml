@@ -10,11 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="48" column="64" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
+            <state relative-caret-position="319">
+              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -22,11 +22,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comparison_plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="100" column="19" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+            <state relative-caret-position="104">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -37,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/video_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1678">
+            <state relative-caret-position="866">
               <caret line="103" selection-start-line="103" selection-end-line="103" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -49,7 +49,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plot_scatter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="238">
               <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -108,6 +108,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,13 +119,13 @@
             <path>
               <item name="dlc_webcam_analysis_program" type="b2602c69:ProjectViewProjectNode" />
               <item name="dlc_webcam_analysis_program" type="462c0819:PsiDirectoryNode" />
-              <item name="Wednesday" type="462c0819:PsiDirectoryNode" />
+              <item name="Thursday" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dlc_webcam_analysis_program" type="b2602c69:ProjectViewProjectNode" />
               <item name="dlc_webcam_analysis_program" type="462c0819:PsiDirectoryNode" />
-              <item name="Wednesday" type="462c0819:PsiDirectoryNode" />
-              <item name="2019-08-07" type="462c0819:PsiDirectoryNode" />
+              <item name="Thursday" type="462c0819:PsiDirectoryNode" />
+              <item name="2019-08-08" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dlc_webcam_analysis_program" type="b2602c69:ProjectViewProjectNode" />
@@ -139,7 +140,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,12 +246,14 @@
       <workItem from="1565014354647" duration="5004000" />
       <workItem from="1565109453939" duration="8588000" />
       <workItem from="1565190006172" duration="3933000" />
-      <workItem from="1565207651611" duration="4304000" />
+      <workItem from="1565207651611" duration="5889000" />
+      <workItem from="1565275911297" duration="1528000" />
+      <workItem from="1565280433968" duration="2852000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118824000" />
+    <option name="totallyTimeSpent" value="124789000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -264,13 +266,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17704123" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18755053" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42384106" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33112583" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.24834438" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -292,7 +295,7 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/dlc_webcam_analysis_program$main.coverage" NAME="main Coverage Results" MODIFIED="1565212503863" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/dlc_webcam_analysis_program$main.coverage" NAME="main Coverage Results" MODIFIED="1565292251907" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/dlc_webcam_analysis_program$plotting.coverage" NAME="plotting Coverage Results" MODIFIED="1563999934228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/DeepLabCut/deeplabcut/utils" />
   </component>
   <component name="editorHistoryManager">
@@ -360,7 +363,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plot_scatter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="238">
           <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -370,7 +373,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/video_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1678">
+        <state relative-caret-position="866">
           <caret line="103" selection-start-line="103" selection-end-line="103" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -378,22 +381,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/comparison_plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="48" column="64" selection-start-line="48" selection-start-column="64" selection-end-line="48" selection-end-column="64" />
+        <state relative-caret-position="104">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
           <folding>
-            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comparison_plot.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="100" column="19" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="19" />
+        <state relative-caret-position="319">
+          <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>

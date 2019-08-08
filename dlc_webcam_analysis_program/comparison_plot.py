@@ -95,10 +95,10 @@ def comparison_plot(day, week_day, video_path):
         counter += 1
 
 
-    ### PROGRAM BREAKS RIGHT HERE!!! ###
+    print('Current directory at break point is: ' + os.getcwd())
     while (
-            os.getcwd() != 'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + str(week_day) + '/' + str(
-        day)+ '/'):
+            os.getcwd() != 'C:\\Users\\ruidi\\OneDrive\\Documents\\GitProjects\\webcam_analysis\\dlc_webcam_analysis_program\\' + str(week_day) + '\\' + str(
+        day)): # os.getcwd() requires backslashes instead of normal slashes! Be careful in the future!
         os.chdir('..')
 
     if (os.path.exists(str(day) + '_output_video_frames')):
