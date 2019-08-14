@@ -4,6 +4,7 @@ from datetime import date
 from video_functions import capture_video, play_video, mask_video
 from comparison_plot import comparison_plot
 from plot_scatter import plot_scatter
+from position_difference import position_difference
 
 # Main function with code to run
 # Use my_date and day_of_week variables within main
@@ -34,11 +35,11 @@ if __name__ == "__main__":
 
     # Use OpenCV to play the labeled video created by deeplabcut
     #mask_video(my_date, day_of_week, video_path)
-    #play_video(my_date, day_of_week, video_path)
+    play_video(my_date, day_of_week, video_path)
 
     # Plot a scatter plot from the csv data of the video taken
     # At this point, current working directory is inside the file where the video and csv file are due to the change of directory in the capture_video function
-    #plot_scatter(my_date, day_of_week, str(my_date) + '_outputDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_435000.csv')
+    plot_scatter(my_date, day_of_week, str(my_date) + '_outputDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_150000.csv')
 
     # Other plotting methods
     comparison_plot(my_date, day_of_week, video_path)
@@ -47,3 +48,6 @@ if __name__ == "__main__":
     #deeplabcut.analyze_videos(config_path, [video_path + str(my_date) + '_output_subtracted.avi'], save_as_csv=True)
     #deeplabcut.create_labeled_video(config_path, [video_path + str(my_date) + '_output_subtracted.avi'], draw_skeleton=True, trailpoints=5)
     #plot_scatter(my_date, day_of_week, str(my_date) + '_output_subtractedDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_435000.csv')
+
+    ### Dataframe Analysis ###
+    position_difference()

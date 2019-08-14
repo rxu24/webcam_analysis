@@ -19,7 +19,7 @@ def capture_video(day, week_day):
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
 
     # Change the name of the output later to be a concatenation of date or day of week and 'output'
-    out = cv2.VideoWriter(str(day) + '_output.avi', fourcc, 20.0, (640, 480), isColor = True)
+    out = cv2.VideoWriter(str(day) + '_output.avi', fourcc, 20.0, (640, 480), isColor=True)
 
     while (cap.isOpened()):
         ret, frame = cap.read()
@@ -30,13 +30,17 @@ def capture_video(day, week_day):
             cv2.flip(frame, 1)
 
             # write the flipped frame
-            out.write(frame) # Write the normal frame
+            out.write(frame)  # Write the normal frame
 
             cv2.imshow('frame', frame)
 
             # specify a key that will turn off camera; currently using spacebar
             if cv2.waitKey(1) & 0xFF == ord(' '):
                 break
+            if cv2.waitKey(1) & 0xFF == ord('p'):
+                is_Writing = False
+            if cv2.waitKey(1) & 0xFF == ord('c'):
+                is_Writing = True
         else:
             break
 
@@ -51,10 +55,11 @@ def mask_video(day, week_day, video_path):
 
     if (
             os.getcwd() != 'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
-            day)):
+        day)):
         os.chdir(
             'C:/Users/ruidi/OneDrive/Documents/GitProjects/webcam_analysis/dlc_webcam_analysis_program/' + week_day + '/' + str(
                 day))
+        print('Current working directory has been changed to: ' + os.getcwd())
 
     video_file = cv2.VideoCapture(video_path + str(day) + '_output.avi')
 
@@ -100,9 +105,10 @@ def play_video(day, week_day, video_path):
     print('Running play_video() function now...')
     print('Video path inputted into function is: ' + video_path)
     video_file = cv2.VideoCapture(
-        video_path + str(day) + '_outputDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_435000_labeled.mp4') # requires deeplabcut analysis prior
+        video_path + str(
+            day) + '_outputDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_150000_labeled.mp4')  # requires deeplabcut analysis prior
 
-    if (os.path.exists(video_path + str(day) + '_outputDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_435000.mp4')):
+    if (os.path.exists(video_path + str(day) + '_outputDeepCut_resnet50_dlc_webcam_analysisAug5shuffle1_150000.mp4')):
         print('Video found')
     else:
         print('No video found at specified directory location!')
